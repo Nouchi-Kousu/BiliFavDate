@@ -1,4 +1,4 @@
-# BiliFavDate
+# [BiliFavDate](https://greasyfork.org/zh-CN/scripts/545120-b%E7%AB%99%E6%94%B6%E8%97%8F%E5%A4%B9%E6%94%B6%E8%97%8F%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA)
 
 本脚本实现了三个功能：
 
