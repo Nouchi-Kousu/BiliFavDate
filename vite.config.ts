@@ -7,10 +7,15 @@ export default defineConfig({
         monkey({
             entry: "src/main.ts",
             userscript: {
-                icon: "https://vitejs.dev/logo.svg",
-                namespace: "npm/vite-plugin-monkey",
-                match: ["https://space.bilibili.com/*"],
+                icon: "http://bilibili.com/favicon.ico",
+                namespace: "https://github.com/Nouchi-Kousu/BiliFavDate",
+                match: ["*://space.bilibili.com/*"],
                 grant: "none",
+                author: "Nouchi",
+                license: "MIT",
+                name: "B站收藏夹收藏时间显示",
+                description:
+                    "将B站收藏夹中被隐藏为“收藏于2年前”的视频还原为具体日期。",
             },
         }),
     ],
