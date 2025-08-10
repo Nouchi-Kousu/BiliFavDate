@@ -64,6 +64,8 @@ const createFollowDateChild = (followTime: number) => {
     followDateChild.style.color = "rgb(97,102,109)";
     followDateChild.style.fontSize = "12px";
     followDateChild.style.marginLeft = "12px";
+    followDateChild.title = `关注于${followDateStr}`;
+    followDateChild.setAttribute("data-follow-time", followTime.toString());
     followDateChild.innerHTML = `关注于${followDateStr}`;
     return followDateChild;
 };
@@ -75,6 +77,9 @@ const followElementModification = (
     if (followList.length !== elements.length) return;
 
     for (let i = 0; i < elements.length; i++) {
+        if (elements[i].querySelector("div[data-follow-time]")) {
+            continue;
+        }
         const followDateChild = createFollowDateChild(followList[i].mtime);
         elements[i].appendChild(followDateChild);
     }
